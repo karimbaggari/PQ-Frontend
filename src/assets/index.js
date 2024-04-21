@@ -1,5 +1,6 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
+import rocket from "./rocket.png";
 import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
@@ -38,6 +39,7 @@ export {
   shield,
   star,
   menu,
+  rocket,
   close,
   google,
   apple,

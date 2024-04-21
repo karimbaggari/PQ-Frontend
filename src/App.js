@@ -25,12 +25,11 @@ function App() {
         </div>
         <div className={`bg-transparent ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
-            <Stats />
+            {/* <Stats /> */}
             <Business />
             <Billing />
             <CardDeal />
             <Testimonials />
-            <Clients />
             <CTA />
             <Footer />
           </div>

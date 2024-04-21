@@ -23,7 +23,7 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Quality",
     content:
       "The best credit cards offer some tantalizing combinations of promotions and prizes",
   },
@@ -37,7 +37,7 @@ export const features = [
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Fast Delievry",
     content:
       "A balance transfer credit card can save you a lot of money in interest charges.",
   },
