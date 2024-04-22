@@ -1,4 +1,4 @@
-import { feedback } from "../constants";
+import { feedback, services } from "../constants";
 import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
 import { StarsCanvas } from "./canvas";
@@ -12,7 +12,7 @@ const Testimonials = () => (
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
+      {services?.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>
     <StarsCanvas />
   </section>
