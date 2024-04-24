@@ -11,6 +11,7 @@ const FeedbackCard = ({ content, name, img }) => (
     </div>
     <p className="font-poppins font-normal text-[18px] leading-[22.4px] text-white my-10 flex  flex-col justify-end h-full">
       {content}
+      test
     </p>
     <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-center">
       <a href="#" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-indigo-900 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Learn More</a>
