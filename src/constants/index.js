@@ -19,6 +19,64 @@ export const navLinks = [
   },
 ];
 
+export const experiences = [
+  {
+    title: "Full-Stack Java/Angular",
+    company_name: "youcode",
+    icon: "1",
+    iconBg: "#383E56",
+    date: "Nov 2020 - Apr 2022",
+    points: [
+      "• Design application mockups",
+      "Build dynamic user interfaces for desktop",
+      "Build data access components",
+      "Build the front-end part of a web user interface",
+      "Build the back-end part of a web user interface",
+      "Design a database",
+      "Create and set up a database",
+      "Build components in database language",
+      "Use collaboration within project management and the organization of the development environment",
+      "Design an application",
+      "Build business components",
+      "Build a multi-tier architecture application",
+      " Build a mobile application",
+      "Write test cases for an application",
+      " Deploy an application",
+    ],
+  },
+  {
+    title: "Backend Developer Node.js",
+    company_name: "HBS",
+    icon: "2",
+    iconBg: "#E6DEDD",
+    date: "Sep 2021 - Nov 2021",
+    points: [
+      "The first internship of an engineering student is a stage of change in the latter's life. in this internship, i worked on a business project called H-shop using most used javascript technologies both in backend and frontend, but my tasks were more concentrated in the backend part using node. js based on typescript and connecting to sql database using sequelize technology",
+    ],
+  },
+  {
+    title: "Full Stack React/Node",
+    company_name: "Evold",
+    icon: "3",
+    iconBg: "#383E56",
+    date: "Oct 2021 - Dec 2021",
+    points: [
+      "in this opportunity i worked on a platform called schoonect with a team of engineers using latest technologies in javascript such as React and Node.js based on typescript and connecting to no-sql mongodb database",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Capgemini",
+    icon: "4",
+    iconBg: "#E6DEDD",
+    date: "April 2022 - Present",
+    points: [
+      "I've had the opportunity to work on a variety of projects during my time here. I have a strong background in both Java and JavaScript, and I've been fortunate to work alongside senior engineers on some very complex codebases. Additionally, I have experience with DevOps engineering, which has given me a well-rounded perspective on the software development process. I'm constantly looking for ways to improve my skills and stay up-to-date on the latest trends and technologies in the field. I take pride in delivering high-quality work and contributing to the success of any team or project I'm a part of.",
+    ],
+  },
+];
+
+
 export const features = [
   {
     id: "feature-1",
