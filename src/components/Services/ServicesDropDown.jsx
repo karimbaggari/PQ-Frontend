@@ -11,7 +11,7 @@ import styles from "../../style";
 import { experiences } from "../../constants/index";
 import { SectionWrapper } from "../../hoc";
 
-const ExperienceCard = ({ experience }) => {
+const ServicesDropDown = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -50,11 +50,11 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const ExperienceDropDown = () => {
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.heading2} text-center`}>
           We Provide
         </p>
       </motion.div>
@@ -62,7 +62,7 @@ const Experience = () => {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard
+            <ServicesDropDown
               key={`experience-${index}`}
               experience={experience}
             />
@@ -73,4 +73,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(ExperienceDropDown, "work");

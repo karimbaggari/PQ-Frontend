@@ -7,7 +7,7 @@ const Testimonials = () => (
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h2 className={styles.heading2}>
-      What we do? <br className="sm:block hidden" /> Discover our Services
+      What we do? <br className="sm:block hidden" /> Discover our <span className="text-indigo-500">Services</span>
       </h2>
     </div>
 
