@@ -7,33 +7,38 @@ import { MoreServices } from "../../constants/index";
 import StarWrapper from "../../hoc/SectionWrapper";
 import { fadeIn } from "../../utils/motion";
 
-const OtherServices = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full p-[1px] rounded-[20px]"
-    >
-      <div
-        options={{
-          max: 25,
-          scale: 1,
-          speed: 450,
-        }}
-        className={`rounded-[20px]  cursor-pointer ${title == "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
+const OtherServices = ({ index, icon, service1, service2, service3, service4, service5 }) => {
+  const title = [service1, service2, service3, service4, service5]
+  console.log(service1)
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className="w-full p-[1px] rounded-[20px]"
       >
-      <div className="w-14 h-14">  
-      {parse(icon)}
-      </div>
+        <div
+          options={{
+            max: 25,
+            scale: 1,
+            speed: 450,
+          }}
+          className={`rounded-[20px]  cursor-pointer ${title == "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
+        >
+          <div className="w-14 h-14">
+            {parse(icon)}
+          </div>
 
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title[index]}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  )
+};
 
-const ExtraServices = () => {
+const ExtraServices = (props) => {
+  console.log("from growth ",props)
   return (
     <>
       <motion.div>
@@ -53,11 +58,11 @@ const ExtraServices = () => {
 
       <div className="mt-20 flex flex-wrap gap-10">
         {MoreServices.map((service, index) => (
-          <OtherServices key={service.title} index={index} icon={service.icon} {...service} />
+          <OtherServices key={index} index={index} icon={service.icon} {...service} service1={props.service1} service2={props.service2} service3={props.service3} service4={props.service4} service5={props.service5} />
         ))}
       </div>
     </>
   );
 };
 
-export default StarWrapper(ExtraServices, "other services");
+export default ExtraServices;
