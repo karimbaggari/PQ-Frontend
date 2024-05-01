@@ -17,7 +17,7 @@ const Navbar = () => {
             <a href="#" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Pricing</a>
             <a href="#" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
           </nav>
-          <a href="#" class="hidden rounded-lg bg-tertiary px-8 py-3 text-center text-sm font-semibold text-[#f5faff] outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-700 hover:text-white focus-visible:ring active:text-tertiary md:text-base lg:inline-block">Contact Sales</a>
+          <a href="#" class="hidden rounded-lg bg-tertiary px-8 py-3 text-center text-sm font-semibold text-[#f5faff] outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-700 hover:text-white focus-visible:ring active:text-tertiary md:text-base lg:inline-block">Book Free Call</a>
 
           <button type="button" class="inline-flex items-center gap-2 rounded-lg px-2.5 py-2 text-sm font-semibold text-[#f5faff] ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:tertiary md:text-base lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
