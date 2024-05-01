@@ -8,6 +8,7 @@ import Maintenance from "./pages/Maintenance";
 import Growth from "./pages/Growth";
 import Startups from "./pages/Startups";
 import Entreprise from "./pages/Entreprise";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/startups" element={<Startups />} />
         <Route path="/entreprise" element={<Entreprise />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
