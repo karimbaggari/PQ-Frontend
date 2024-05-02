@@ -20,7 +20,7 @@ import {
             </div>
             <StarsCanvas />
             <ServicesDropDown />
-            <ExtraServices service1={"Growth"} service2={"Security"} service3={"Speed"} service4={"Support"} service5={"Maintenance"} />
+            <ExtraServices service1={"Growth"} service2={"Security"} service3={"Speed"} service4={"Support"} service5={"Maintenance"}  next={"Be Next"}   />
             <Footer />
           </div>
         </div>

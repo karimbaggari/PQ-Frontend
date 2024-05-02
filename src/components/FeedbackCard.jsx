@@ -1,4 +1,5 @@
 import parse from 'html-react-parser'
+import { Link } from 'react-router-dom';
 
 const FeedbackCard = ({ content, name, img }) => (
   <div className="flex justify-between px-10 py-12 rounded-[20px] flex-col max-w-[370px] max-h-[400px] relative md:mr-10 sm:mr-5 mr-0 my-10 feedback-card bg-indigo-900" >
@@ -12,7 +13,7 @@ const FeedbackCard = ({ content, name, img }) => (
       {content}
     </p>
     <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-center">
-      <a href="#" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-indigo-900 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Learn More</a>
+      <a href={`/${name}`} class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-indigo-900 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Learn More</a>
     </div>
   </div>
 );

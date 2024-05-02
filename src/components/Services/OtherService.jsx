@@ -7,9 +7,8 @@ import { MoreServices } from "../../constants/index";
 import StarWrapper from "../../hoc/SectionWrapper";
 import { fadeIn } from "../../utils/motion";
 
-const OtherServices = ({ index, icon, service1, service2, service3, service4, service5 }) => {
-  const title = [service1, service2, service3, service4, service5]
-  console.log(service1)
+const OtherServices = ({ index, icon, service1, service2, service3, service4, service5, next }) => {
+  const title = [service1, service2, service3, service4, service5, next]
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -22,7 +21,7 @@ const OtherServices = ({ index, icon, service1, service2, service3, service4, se
             scale: 1,
             speed: 450,
           }}
-          className={`rounded-[20px]  cursor-pointer ${title == "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
+          className={`rounded-[20px]  cursor-pointer ${title[index] == "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
         >
           <div className="w-14 h-14">
             {parse(icon)}
@@ -58,7 +57,7 @@ const ExtraServices = (props) => {
 
       <div className="mt-20 flex flex-wrap gap-10">
         {MoreServices.map((service, index) => (
-          <OtherServices key={index} index={index} icon={service.icon} {...service} service1={props.service1} service2={props.service2} service3={props.service3} service4={props.service4} service5={props.service5} />
+          <OtherServices key={index} index={index} icon={service.icon} {...service} service1={props.service1} service2={props.service2} service3={props.service3} service4={props.service4} service5={props.service5} next={props.next}/>
         ))}
       </div>
     </>

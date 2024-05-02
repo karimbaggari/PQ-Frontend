@@ -22,7 +22,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/startups" element={<Startups />} />
-        <Route path="/entreprise" element={<Entreprise />} />
+        <Route path="/enterprises" element={<Entreprise />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

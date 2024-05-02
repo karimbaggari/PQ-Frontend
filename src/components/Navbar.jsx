@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div class="bg-transparent ">
@@ -12,10 +13,10 @@ const Navbar = () => {
             Flowrift
           </a>
           <nav class="hidden gap-12 lg:flex">
-            <a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
-          <a href="#" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Features</a>
-            <a href="#" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Pricing</a>
-            <a href="#" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+            <Link to="/" class="text-lg font-semibold text-indigo-500">Home</Link>
+            <Link to="/startups" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Startup</Link>
+            <Link to="/enterprises" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Entreprise</Link>
+            <Link to="/contact" class="text-lg font-semibold text-[#f5faff] transition duration-100 hover:text-indigo-500 active:text-indigo-700">Contact</Link>
           </nav>
           <a href="#" class="hidden rounded-lg bg-tertiary px-8 py-3 text-center text-sm font-semibold text-[#f5faff] outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-700 hover:text-white focus-visible:ring active:text-tertiary md:text-base lg:inline-block">Book Free Call</a>
 
