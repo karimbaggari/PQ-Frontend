@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import parse from 'html-react-parser'
 import styles from "../../style";
 import { MoreServices } from "../../constants/index";
-import StarWrapper from "../../hoc/SectionWrapper";
 import { fadeIn } from "../../utils/motion";
 
 const OtherServices = ({ index, icon, service1, service2, service3, service4, service5, next }) => {
@@ -21,7 +20,7 @@ const OtherServices = ({ index, icon, service1, service2, service3, service4, se
             scale: 1,
             speed: 450,
           }}
-          className={`rounded-[20px]  cursor-pointer ${title[index] == "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
+          className={`rounded-[20px]  cursor-pointer ${title[index] === "Be Next" ? "bg-transparent border-2 border-indigo-500" : "bg-indigo-900"} py-5 px-12 min-h-[180px] flex justify-evenly items-center flex-col`}
         >
           <div className="w-14 h-14">
             {parse(icon)}

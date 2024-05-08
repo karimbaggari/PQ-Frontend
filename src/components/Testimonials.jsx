@@ -1,4 +1,4 @@
-import { feedback, services } from "../constants";
+import { services } from "../constants";
 import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
 import { StarsCanvas } from "./canvas";

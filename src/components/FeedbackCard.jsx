@@ -1,5 +1,4 @@
 import parse from 'html-react-parser'
-import { Link } from 'react-router-dom';
 
 const FeedbackCard = ({ content, name, img }) => (
   <div className="flex justify-between px-10 py-12 rounded-[20px] flex-col max-w-[370px] max-h-[400px] relative md:mr-10 sm:mr-5 mr-0 my-10 feedback-card bg-indigo-900" >
