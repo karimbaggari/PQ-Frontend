@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     Navbar,
-    Header,
     Footer,
     StarsCanvas,
 } from "../components";

@@ -1,15 +1,11 @@
 import {
   Navbar,
-  Header,
   Footer,
   StarsCanvas,
   CardDeal,
   Business,
 } from "../components";
 import styles from '../style';
-import StartupAdvantages from "../components/StartupAdvantages";
-import StartupTestimonials from "../components/StartupTestimonials";
-import StartupQuestions from "../components/StartupQuestions";
 import StartupCall from "../components/StartupCall";
 import EntrepriseHeader from "../components/EntrepriseHeader";
 import EntrepriseAdvantages from "../components/EntrepriseAdvantages";

@@ -1,12 +1,9 @@
 import {
     Navbar,
-    Header,
     Footer,
     StarsCanvas,
   } from "../components";
-  import ServicesDropDown from '../components/Services/ServicesDropDown';
   import styles from '../style';
-  import ExtraServices from '../components/Services/OtherService';
 import StartupHeader from "../components/StartupHeader";
 import StartupAdvantages from "../components/StartupAdvantages";
 import StartupTestimonials from "../components/StartupTestimonials";
